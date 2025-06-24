@@ -93,7 +93,7 @@ async function updateUserStatus(userId, location) {
 
 // Slash Command Handler with robust error handling for /officeorbit and /timeoff
 receiver.router.post('/slack/commands', async (req, res) => {
-  const { command, user_id, text, trigger_id } = req.body;
+const { command, user_id, text, trigger_id } = req.body;
 
   console.log(`Received command: ${command} from user ${user_id} with text: "${text}"`);
 receiver.router.post('/slack/commands', async (req, res) => {
